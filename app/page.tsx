@@ -248,45 +248,52 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Results Section */}
-      <section id="work" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Results & Sample Work</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Real examples of the impact we deliver for our clients
-            </p>
-          </div>
+     {/* Results Section */}
+<section id="work" className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold mb-4">Results & Client Work</h2>
+      <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+        A showcase of real projects I’ve delivered for international clients
+      </p>
+    </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Website Redesign",
-                caption: "Modern, fast, and SEO-optimized website for European e-commerce client",
-                image: "/modern-website-design-desktop-view.jpg",
-              },
-              {
-                title: "SEO Performance",
-                caption: "Example of improved search rankings after 3-month SEO optimization",
-                image: "/search-engine-ranking-growth-chart.jpg",
-              },
-              {
-                title: "Analytics Dashboard",
-                caption: "Example of a monthly GA4 performance report delivered to clients",
-                image: "/google-analytics-dashboard-ga4.jpg",
-              },
-            ].map((work, idx) => (
-              <div key={idx} className="overflow-hidden rounded-lg border border-border hover:shadow-lg transition-all">
-                <img src={work.image || "/placeholder.svg"} alt={work.title} className="w-full h-48 object-cover" />
-                <div className="p-6 bg-muted">
-                  <h3 className="text-lg font-bold mb-2">{work.title}</h3>
-                  <p className="text-muted-foreground text-sm">{work.caption}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    <div className="grid md:grid-cols-3 gap-8">
+
+      {/* Amplifyd */}
+      <div className="rounded-lg border border-border p-6 bg-muted hover:shadow-lg transition-all">
+        <h3 className="text-xl font-bold mb-3">Amplifyd — Software Engineering</h3>
+        <p className="text-muted-foreground text-sm leading-relaxed">
+          Working as a software engineer on a large-scale platform. Focused on
+          building high-performance features, API integrations, dynamic UI components,
+          and system-level enhancements to support business scaling.
+        </p>
+      </div>
+
+      {/* Ansely (UK) */}
+      <div className="rounded-lg border border-border p-6 bg-muted hover:shadow-lg transition-all">
+        <h3 className="text-xl font-bold mb-3">Ansely (UK Client) — Web Application</h3>
+        <p className="text-muted-foreground text-sm leading-relaxed">
+          Developed complete web application setup including UI/UX, modular components,
+          backend logic, and deployment. Improved performance and conversions for
+          UK-based service operations.
+        </p>
+      </div>
+
+      {/* Amapali */}
+      <div className="rounded-lg border border-border p-6 bg-muted hover:shadow-lg transition-all">
+        <h3 className="text-xl font-bold mb-3">Amplifyd — SEO, Analytics & Ads</h3>
+        <p className="text-muted-foreground text-sm leading-relaxed">
+          Managed SEO strategy, Google Analytics (GA4) tracking, Google Ads campaigns,
+          performance dashboards, and real-time reporting automation. Delivered measurable growth in
+          visibility and user acquisition.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* About Section */}
       <section id="about" data-animate className="py-20 bg-gradient-to-r from-background via-primary/3 to-background">
