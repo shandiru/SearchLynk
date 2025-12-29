@@ -304,7 +304,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary blur-2xl opacity-20 rounded-full" />
                 <img
-                  src="/1691572478095__1_-removebg-preview_imgupscaler.ai_V1(Fast)_2K.png"
+                  src="/dp.png"
                   alt="Dirushan - Founder"
                   className="relative w-full rounded-2xl object-cover border-4 border-primary shadow-2xl hover:shadow-3xl transition-shadow duration-300"
                 />
